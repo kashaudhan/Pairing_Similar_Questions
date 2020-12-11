@@ -1,7 +1,7 @@
 # Pairing_Similar_Questions
 Quora Question Pairing
 
-The deployed model is LightGBM as its logloss comes out to be # 0.3964
+The deployed model is LightGBM as its logloss comes out to be --  0.3964
 
  Gradient Boosting Classifier logloss --  0.4144
  
