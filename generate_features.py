@@ -1,8 +1,20 @@
-import nltk
+#import nltk
 import numpy as np
 from collections import Counter
-nltk.download('stopwords')
-stop_words = set(nltk.corpus.stopwords.words('english'))
+# nltk.download('stopwords')
+# stop_words = set(nltk.corpus.stopwords.words('english'))
+
+
+stop_words = {'it', "you'd", 'are', 'the', 'up', 'those', 'themselves', 'hers', 'on', 'when', 'is', 'ma', 'you', 'as', 'over', 'at', 'am', 'while', 'won', 
+ 'both', 'where', 'd', "should've", "shouldn't", 'this', 'yourselves', 'needn', "you've", 'from', 'she', 'herself', 'did', 'will', 'until', 'through', 
+ "you'll", 'here', 'some', 'a', 'but', 'had', 'other', 'we', 'having', 'wouldn', 'do', 'again', "don't", 'ours', 'by', 'all', 'doesn', 'against', 'be', 
+ 'have', 'their', 'doing', 'after', 'o', 'out', 'why', 'so', 'about', 'once', "isn't", 'was', 'during', 'couldn', 'any', 'mightn', 'ourselves', "doesn't", 
+ 'these', 'our', 'for', 'isn', 'more', 'been', 'his', 'shouldn', 'too', 're', "didn't", 'an', 'that', 'no', 'before', 'does', 'into', 'which', 'hasn', "needn't", 
+ 'whom', 'y', "hadn't", 's', 'than', 'down', 'off', 'now', "weren't", 'because', 'only', "she's", 'himself', 'being', "haven't", 'or', 'to', 'her', 'and', 'can', 
+ 'weren', 'in', 'haven', 'they', 'further', 'each', 'below', 'hadn', 'its', 'there', "mustn't", 'who', "it's", 't', 'them', 'very', 'yours', 'me', 'he', "hasn't", 
+ 'didn', 'with', 'theirs', 'shan', 'don', 've', 'mustn', 'between', 'i', 'not', 'above', 'him', 'such', 'wasn', 'own', 'my', "couldn't", 'what', "mightn't", "that'll", 
+ 'were', "won't", 'of', 'most', 'nor', 'just', 'yourself', 'how', "aren't", 'under', "wouldn't", "wasn't", 'll', 'myself', 
+ 'ain', 'then', 'has', 'aren', "shan't", 'your', 'few', "you're", 'm', 'if', 'same', 'itself', 'should'}
 
 def get_weight(count, epsilon=10000, min_count=2):
   return 0 if count<min_count else 1/(count+epsilon)
