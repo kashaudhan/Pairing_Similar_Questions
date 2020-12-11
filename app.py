@@ -11,7 +11,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 def templet():
     return render_template('index.html')
 
-@app.route('/', methods = ['POST'])
+@app.route('/predict', methods = ['POST', 'GET'])
 def predict():
     questions = [x for x in request.form.values()]
     features = feature_create(questions[0], questions[1])
