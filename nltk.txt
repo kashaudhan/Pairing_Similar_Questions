@@ -1,1 +1,1 @@
-corpus.stopwords
+stopwords
