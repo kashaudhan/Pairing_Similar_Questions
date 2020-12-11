@@ -1,1 +1,1 @@
-web: gunicorn app:app nltk:nltk
+web: gunicorn app:app
