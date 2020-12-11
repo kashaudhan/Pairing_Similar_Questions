@@ -1,7 +1,7 @@
 import nltk
 import numpy as np
 from collections import Counter
-
+nltk.download('stopwords')
 stop_words = set(nltk.corpus.stopwords.words('english'))
 
 def get_weight(count, epsilon=10000, min_count=2):
