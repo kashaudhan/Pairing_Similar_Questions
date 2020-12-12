@@ -11,3 +11,4 @@ matplotlib>=3.2.1
 pandas>=1.1.4
 collections-extended==1.0.3
 pickleshare==0.7.5
+lightgbm==2.3.1
